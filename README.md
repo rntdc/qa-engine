@@ -3,7 +3,7 @@ QA Engine que trabalha com perfis de usu√°rios, linha do tempo com perguntas(an√
 
 
 # Stack
-- Node.js
-- Mysql 
-
-- Express.js
+- Node.js (Express.js)
+- Mysql (Sequelize.js)
+- EJS
+- Bootstrap
