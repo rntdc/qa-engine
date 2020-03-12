@@ -7,3 +7,7 @@ QA Engine que trabalha com perfis de usu√°rios, linha do tempo com perguntas(an√
 - Mysql (Sequelize.js)
 - EJS
 - Bootstrap
+
+.
+
+npm install express body-parser ejs express-ejs-layouts method-override passport express-pino-logger sequelize mysql2 --save
