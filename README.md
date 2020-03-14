@@ -11,3 +11,4 @@ QA Engine que trabalha com perfis de usu√°rios, linha do tempo com perguntas(an√
 .
 
 npm install express body-parser ejs express-ejs-layouts method-override passport express-pino-logger sequelize mysql2 --save
+npm install express-session bcrypt-nodejs connect-flash passport-local --save
