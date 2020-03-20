@@ -1,4 +1,5 @@
 const bcrypt = require('bcrypt-nodejs');
+
 module.exports = (sequelize, DataTypes) => {
     const User = sequelize.define('User', {
         username: {
@@ -20,11 +21,12 @@ module.exports = (sequelize, DataTypes) => {
         }
     });
 
-    /*hash
-    User.hook('beforeCreate', function(user) {
+    User.prototype.validatePassword = function(password){
+        return bcrypt.compareSync(password, this.password);
+    }
+    User.addHook('beforeCreate', function(user) {
         user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
     });
-    */
 
     return User;
 }
