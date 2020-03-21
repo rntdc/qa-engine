@@ -25,8 +25,16 @@ passport.serializeUser(function(user, done) {
     done(null, user);
 });
 
-passport.deserializeUser(function(user, done) {
-    done(null, user);
-})
+passport.deserializeUser(async function (user, done) {
+    try {
+        const userDB = await User.findOne({});
+        if (!userDB) {
+            return done(new Error('Invalid user'));
+        }
+        return done(null, userDB);
+    } catch (err) {
+        console.log("ERROR", err);
+    }
+});
 
 module.exports = passport;
