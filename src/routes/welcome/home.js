@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
         if (user && user.first_access) {
             return res.render('welcome/index', { user: req.user });
         }
-        return res.redirect('/');
+        return res.redirect(`/t/${req.user.username}`);
     } catch (err) {
         console.log('ERROR', err);
     }

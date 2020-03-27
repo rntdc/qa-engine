@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
         const obj = { name, age, first_access: false, avatar: `https://api.adorable.io/avatars/150/${req.user.username}.png`};
         await User.update(obj, { where: { id: req.user.id }});
 
-        return res.redirect('/');
+        return res.redirect(`/t/${req.user.username}`);
     }catch(err){
         console.log("ERROR", err);
     }
