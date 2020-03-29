@@ -1,5 +1,5 @@
-module.exports = (sequeliza, DataTypes) => {
-    const Answer = sequilize.define('Answer', {
+module.exports = (sequelize, DataTypes) => {
+    const Answer = sequelize.define('Answer', {
         question: {
             type: DataTypes.STRING,
             allowNull: false
