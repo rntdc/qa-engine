@@ -11,3 +11,4 @@ QA Engine que trabalha com perfis de usuÃ¡rios, linha do tempo com perguntas(anÃ
 .
 
 npm install
+npm start
