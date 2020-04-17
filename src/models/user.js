@@ -31,13 +31,13 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        first_access:{
+        first_access: {
             type: DataTypes.BOOLEAN,
             defaultValue: true
         }
     });
 
-    User.prototype.validatePassword = function(password){
+    User.prototype.validatePassword = function(password) {
         return bcrypt.compareSync(password, this.password);
     }
     User.addHook('beforeCreate', function(user) {

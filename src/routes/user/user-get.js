@@ -1,3 +1,3 @@
 module.exports = (req, res) => {
-    return res.render('user/login', { layout: 'layout-login'});
+    return res.render('user/login', { layout: 'layout-login' });
 }

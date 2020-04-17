@@ -1,13 +1,12 @@
 const User = require('./../../models/index').User;
 
 module.exports = async (req, res) => {
-    try{
+    try {
         const { name, age } = req.body;
-        const obj = { name, age, first_access: false, avatar: `https://api.adorable.io/avatars/150/${req.user.username}.png`};
-        await User.update(obj, { where: { id: req.user.id }});
-
+        const obj = { name, age, first_access: false, avatar: `https://api.adorable.io/avatars/150/${req.user.username}.png` };
+        await User.update(obj, { where: { id: req.user.id } });
         return res.redirect(`/t/${req.user.username}`);
-    }catch(err){
-        console.log("ERROR", err);
+    } catch (err) {
+        console.log("ERRRO", err);
     }
 }

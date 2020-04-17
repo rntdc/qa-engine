@@ -27,7 +27,7 @@ passport.serializeUser(function(user, done) {
 
 passport.deserializeUser(async function (user, done) {
     try {
-        const userDB = await User.findOne({});
+        const userDB = await User.findByPk(user.id);
         if (!userDB) {
             return done(new Error('Invalid user'));
         }
