@@ -1,6 +1,8 @@
 # qa-engine
 QA Engine que trabalha com perfis de usuários, linha do tempo com perguntas(anônimas ou não) com suas respectivas respostas
 
+Finalizado
+
 
 # Stack
 - Node.js (Express.js)
