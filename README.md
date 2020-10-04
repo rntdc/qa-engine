@@ -1,6 +1,5 @@
 # qa-engine
-QA Engine que trabalha com perfis de usuários, linha do tempo com perguntas(anônimas ou não) com suas respectivas respostas
-
+QA Engine, desenvolvida para praticar conceitos, capaz de trabalhar com perfis de usuários e linha do tempo com perguntas(anônimas ou não) e respostas.
 Finalizado
 
 
